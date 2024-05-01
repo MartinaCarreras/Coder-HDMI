@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/Favicon.jpg">
+    <title>Cotización</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../images/unnamed.png" alt="Logo"></a>
         <nav>
             <ul>
+                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="logo"></a></li>
                 <li><a href="./Productos.html">Productos</a></li>
                 <li><a href="./Cotizacion.html">Cotización</a></li>
                 <li><a href="./Blog.html">Blog</a></li>
@@ -20,20 +22,40 @@
     <main>
         <h2>Si tienes un patrón que quieras que creemos personalmente, llena este formulario con todos los detalles de tu pedido.
             Te mandaremos la cotización a tu mail!</h2>
-        <form action="">
-            <label for="link-patron">Link a ti patrón:</label>
-            <input id="link-patron" type="text" required>
-            <label for="tipo-lana">Lana (tipo):</label>
-            <input id="tipo-lana" type="text" placeholder="(original)">
-            <label for="color">Color:</label>
-            <input id="color" type="text" placeholder="(original)">
-            <label for="nombre-cotizacion">Nombre completo:</label>
-            <input type="text" name="" id="">
+        <form action="" class="forms-cotizacion inlineblock">
+            <div class="caja inlineblock">
+                <label for="link-patron">Link a ti patrón:</label><br>
+                <br><label for="tipo-lana">Lana (tipo):</label><br>
+                <br><label for="color">Color:</label>
+            </div>
+            <div class="caja inlineblock">
+                <input id="link-patron" type="text" required><br>
+                <br><input id="tipo-lana" type="text" placeholder="(original)"><br>
+                <br><input id="color" type="text" placeholder="(original)">
+            </div>
+            <div class="caja inlineblock">
+                <label for="nombre-cotizacion">Nombre completo:</label><br>
+                <br><label for="mail">Mail:</label><br>
+                <br><label for="numero">Número:</label>
+            </div>
+            <div class="caja inlineblock">
+                <input id="nombre-cotizacion" type="text" required><br>
+                <br><input id="mail" type="mail" required><br>
+                <br><input id="numero" type="number" required>
+            </div>
+            <div class="caja2 center">
+                <label for="detalles">Detalles:</label>
+                <textarea name="" id="detalles" cols="30" rows="10" placeholder="Escribe tus especificaciones."></textarea>
+                <input type="submit" class="submit- submit-button">
+            </div>
         </form>
     </main>
     <footer>
-        <h2>Siguenos en nuestras redes sociales!!</h2>
-        <h3>@tupeluchito.oficial</h3>
+        <section>
+            <h2 class="center">Siguenos en nuestras redes sociales!!</h2>
+            <img src="../images/icono-instagram.png" alt="instagram" class="insta-footer">
+            <h3 class="inline-class">@tupeluchito.oficial</h3>
+        </section>
     </footer>
 </body>
 </html>

@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/Favicon.jpg">
+    <title>Blog</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../images/unnamed.png" alt="Logo"></a>
         <nav>
             <ul>
+                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="logo"></a></li>
                 <li><a href="./Productos.html">Productos</a></li>
                 <li><a href="./Cotizacion.html">Cotización</a></li>
                 <li><a href="./Blog.html">Blog</a></li>
@@ -18,25 +20,31 @@
         </nav>
     </header>
     <main>
-        <p>------------------------------------------------------------</p>
         <section>
-            <p>06/09/2023</p>
-            <img src="../images/Ranita 1.jpg" alt="Foto de un peluche de cabeza de rana">
-            <p>Hice este peluche cuanto tenía 15 y me gustó tanto!!
-                Podría hacer este peluche toda mi vida!!
-            </p>
+            <article class="article-blog">
+                <p>06/09/2023</p>
+                <img src="../images/Ranita1.jpg" alt="Foto de un peluche de cabeza de rana" class="imagen-blog inlineblock">
+                <p class="inlineblock texto-blog">Hice este peluche cuanto tenía 15 y me gustó tanto!!
+                    Podría hacer este peluche toda mi vida!!</p>
+            </article>
+            <article class="article-blog">
+                <p>10/09/2023</p>
+                <img src="../images/Pulpito-blanco.jpg" alt="Foto de un peluche de pulpito blanco" class="imagen-blog inlineblock">
+                <p class="inlineblock texto-blog">Este pulpito fue el primer peluche que hice, es hermosoooo </p>
+            </article>
+            <article class="article-blog">
+                <p>17/09/2023</p>
+                <img src="../images/Manzanita-verde.jpg" alt="Foto de un peluche de manzana verde" class="imagen-blog inlineblock">
+                <p class="inlineblock texto-blog">Lo acabo de terminar, tardé menos de un día y fue muy facil de hacer. Voy a intentar alguna otra fruta la próxima! </p>
+            </article>
         </section>
-        <p>------------------------------------------------------------</p>
-        <section>
-            <p>10/09/2023</p>
-            <img src="../images/Pulpito blanco.jpg" alt="Foto de un peluche de pulpito blanco">
-            <p>Este pulpito fue el primer peluche que hice, es hermosoooo <3</p>
-        </section>
-        <p>------------------------------------------------------------</p>
     </main>
     <footer>
-        <h2>Siguenos en nuestras redes sociales!!</h2>
-        <h3>@tupeluchito.oficial</h3>
+        <section>
+            <h2 class="center">Siguenos en nuestras redes sociales!!</h2>
+            <img src="../images/icono-instagram.png" alt="instagram" class="insta-footer">
+            <h3 class="inline-class">@tupeluchito.oficial</h3>
+        </section>
     </footer>
 </body>
 </html>
