@@ -3,58 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="shortcut icon" href="../images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/Favicon(1).png">
+    <meta name="description" content="Si quieres algun peluche personalizado, ¡Contactanos y lo haremos especialmente para tí!">
+    <meta name="keywords" content="cotizacion, Cotizacion, cotización, Cotización, especial para ti, peluche personalizado, peluche especial, cotización peluche">    
     <title>Cotización</title>
 </head>
-<body>
+<body class="font">
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="logo"></a></li>
-                <li><a href="./Productos.html">Productos</a></li>
-                <li><a href="./Cotizacion.html">Cotización</a></li>
-                <li><a href="./Blog.html">Blog</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
+            <ul class="header">
+                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="header__logo"></a></li>
+                <li><a href="./Productos.html" class="header-1">Productos</a></li>
+                <li><a href="./Cotizacion.html" class="header-1">Cotización</a></li>
+                <li><a href="./Blog.html" class="header-1">Blog</a></li>
+                <li><a href="./Contacto.html" class="header-1 header__contacto">Contacto</a></li>
+                <li class="header-2">
+                    <nav class="nav">
+                        <div class="nav-container nav-div">
+                            <h1 class="nav-logo">Menú</h1>
+                            <label for="menu" class="nav-label">
+                                <img src="../assets/menu.svg" alt="icono menú" class="nav-img">
+                            </label>
+                            <input type="checkbox" name="" id="menu" class="menu-input">
+                            <div class="nav-menu">
+                                <ul>
+                                    <li><a href="./Productos.html" class="nav-item">Productos</a></li>
+                                    <li><a href="./Cotizacion.html" class="nav-item">Cotización</a></li>
+                                    <li><a href="./Blog.html" class="nav-item">Blog</a></li>
+                                    <li><a href="./Contacto.html" class="nav-item">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Si tienes un patrón que quieras que creemos personalmente, llena este formulario con todos los detalles de tu pedido.
-            Te mandaremos la cotización a tu mail!</h2>
-        <form action="" class="forms-cotizacion inlineblock">
-            <div class="caja inlineblock">
-                <label for="link-patron">Link a ti patrón:</label><br>
-                <br><label for="tipo-lana">Lana (tipo):</label><br>
-                <br><label for="color">Color:</label>
+    <main class=" main maincot">
+        <h2 class="maincot__h2">Si tienes un patrón que quieras que creemos personalmente, llena este formulario con todos los detalles de tu pedido. <br>Te mandaremos la cotización a tu mail!</h2>
+        <form class="forms-cotizacion">
+            <div class="labels1">
+                <label for="link-patron">Link a tu patrón:</label>
+                <label for="tipo-lana">Lana (tipo):</label>
+                <label for="color">Color:</label>
             </div>
-            <div class="caja inlineblock">
-                <input id="link-patron" type="text" required><br>
-                <br><input id="tipo-lana" type="text" placeholder="(original)"><br>
-                <br><input id="color" type="text" placeholder="(original)">
+            <div class="inputs1">
+                <input id="link-patron" type="text" required>
+                <input id="tipo-lana" type="text" placeholder=" (original)">
+                <input id="color" type="text" placeholder=" (original)">
             </div>
-            <div class="caja inlineblock">
-                <label for="nombre-cotizacion">Nombre completo:</label><br>
-                <br><label for="mail">Mail:</label><br>
-                <br><label for="numero">Número:</label>
+            <div class="labels2">
+                <label for="nombre-cotizacion">Nombre completo:</label>
+                <label for="mail">Mail:</label>
+                <label for="numero">Número:</label>
             </div>
-            <div class="caja inlineblock">
-                <input id="nombre-cotizacion" type="text" required><br>
-                <br><input id="mail" type="mail" required><br>
-                <br><input id="numero" type="number" required>
+            <div class="inputs2">
+                <input id="nombre-cotizacion" type="text" required>
+                <input id="mail" type="mail" required>
+                <input id="numero" type="number" required>
             </div>
-            <div class="caja2 center">
+            <div class="labels3">
                 <label for="detalles">Detalles:</label>
-                <textarea name="" id="detalles" cols="30" rows="10" placeholder="Escribe tus especificaciones."></textarea>
-                <input type="submit" class="submit- submit-button">
             </div>
+            <div class="textarea1">
+                <textarea name="" id="detalles" cols="30" rows="10" placeholder=" Escribe tus especificaciones."></textarea><br>
+            </div>
+            <div class="submit1">
+                <input type="submit">
+            </div> 
         </form>
     </main>
     <footer>
-        <section>
-            <h2 class="center">Siguenos en nuestras redes sociales!!</h2>
-            <img src="../images/icono-instagram.png" alt="instagram" class="insta-footer">
-            <h3 class="inline-class">@tupeluchito.oficial</h3>
+        <section class="footer">
+            <h2>Siguenos en nuestras redes sociales!!</h2>
+            <div class="footer__instagram">
+                <img src="../images/icono-instagram.png" alt="instagram" class="footer__instagram--logo">
+                <h3 class="footer__instagram--texto">@tupeluchito.oficial</h3>
+            </div>
         </section>
     </footer>
 </body>

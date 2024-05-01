@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+// Primero importo las variables //
+@import "variables";
+
+//Luego mixins//
+@import "mixins";
+
+// Luego las cosas más generales //
+@import "header";
+@import "main";
+@import "footer";
+
+// Por ultimo importo las hojas de estilos de cada página //
+@import "index";
+@import "blog";
+@import "contacto";
+@import "cotizacion";
+@import "productos";

@@ -3,48 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="shortcut icon" href="../images/Favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/Favicon(1).png">
+    <meta name="description" content="Explora el mundo mágico de peluches tejidos y descubre los secretos del crochet en nuestro blog lleno de creatividad y ternura">
+    <meta name="keywords" content="Peluches de crochet, amigurumi, patrones, tejido a mano, tutoriales, diseños, manualidades, creatividad, inspiración, bebés, animales, decoración, proyectos, artístico, vintage, comunidad, regalos, únicos, temáticos, principiantes, hechos a mano, juguetes, ideas, artesanía, bricolaje, adorables, originales, historias, colección, decoración">
     <title>Blog</title>
 </head>
-<body>
+<body class="font">
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="logo"></a></li>
-                <li><a href="./Productos.html">Productos</a></li>
-                <li><a href="./Cotizacion.html">Cotización</a></li>
-                <li><a href="./Blog.html">Blog</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
+            <ul class="header">
+                <li><a href="../index.html"><img src="../images/Logo-Peluchitos2.jpg" alt="Logo" class="header__logo"></a></li>
+                <li><a href="./Productos.html" class="header-1">Productos</a></li>
+                <li><a href="./Cotizacion.html" class="header-1">Cotización</a></li>
+                <li><a href="./Blog.html" class="header-1">Blog</a></li>
+                <li><a href="./Contacto.html" class="header-1 header__contacto">Contacto</a></li>
+                <li class="header-2">
+                    <div class="accordion accordion-flush accordion-item" id="accordionFlushExample">
+                        <h2 class="accordion-header">
+                            <button class="button-header-2 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Menú</button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse accordion-body" data-bs-parent="#accordionFlushExample">
+                            <ul>
+                                <li><a href="./Productos.html">Productos</a></li>
+                                <li><a href="./Cotizacion.html">Cotización</a></li>
+                                <li><a href="./Blog.html">Blog</a></li>
+                                <li><a href="./Contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <article class="article-blog">
-                <p>06/09/2023</p>
-                <img src="../images/Ranita1.jpg" alt="Foto de un peluche de cabeza de rana" class="imagen-blog inlineblock">
-                <p class="inlineblock texto-blog">Hice este peluche cuanto tenía 15 y me gustó tanto!!
-                    Podría hacer este peluche toda mi vida!!</p>
-            </article>
-            <article class="article-blog">
-                <p>10/09/2023</p>
-                <img src="../images/Pulpito-blanco.jpg" alt="Foto de un peluche de pulpito blanco" class="imagen-blog inlineblock">
-                <p class="inlineblock texto-blog">Este pulpito fue el primer peluche que hice, es hermosoooo </p>
-            </article>
-            <article class="article-blog">
-                <p>17/09/2023</p>
-                <img src="../images/Manzanita-verde.jpg" alt="Foto de un peluche de manzana verde" class="imagen-blog inlineblock">
-                <p class="inlineblock texto-blog">Lo acabo de terminar, tardé menos de un día y fue muy facil de hacer. Voy a intentar alguna otra fruta la próxima! </p>
-            </article>
+    <main class="main mainblog">
+        <section class="mainblog__section">
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Ranita1.jpg" class="card-img-top" alt="Foto de un peluche de cabeza de rana">
+                <div class="card-body">
+                  <p class="card-text">06/09/2023 <br>Hice este peluche cuanto tenía 15 y me gustó tanto!! Podría hacer este peluche toda mi vida!!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Pulpito-blanco.jpg" class="card-img-top" alt="Foto de un peluche de pulpito blanco">
+                <div class="card-body">
+                  <p class="card-text">10/09/2023 <br>Este pulpito fue el primer peluche que hice, es hermosoooo.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Manzanita-verde.jpg" class="card-img-top" alt="Foto de un peluche de manzanita verde">
+                <div class="card-body">
+                  <p class="card-text">17/09/2023 <br>Lo acabo de terminar, tardé menos de un día y fue muy facil de hacer. Voy a intentar alguna otra fruta la próxima!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Tips.jpg" class="card-img-top" alt="Foto que dice tips">
+                <div class="card-body">
+                  <p class="card-text">IMPORTANTE <br>Si hacés algún peluche, asegurate de no apretar mucho los puntos!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Tips.jpg" class="card-img-top" alt="Foto que dice tips">
+                <div class="card-body">
+                  <p class="card-text">IMPORTANTE <br>Siempre tener los puntos bien contados para evitar errores en el proyecto!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Tips.jpg" class="card-img-top" alt="Foto que dice tips">
+                <div class="card-body">
+                  <p class="card-text">Tengo la esquina de mi cuarto lleno de proyectos sin terminar!! No hagan tantos como yo y mantenganse en un máximo de 4...</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Tips.jpg" class="card-img-top" alt="Foto que dice tips">
+                <div class="card-body">
+                  <p class="card-text">Me duelen las manos y la espalda... Asegurense de tener una postura cómoda para tejer!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/Tips.jpg" class="card-img-top" alt="Foto que dice tips">
+                <div class="card-body">
+                  <p class="card-text">Es importante usar el ganchillo que corresponde para la lana que usen. Si es muy grande el tejido va a ser muy suelto o si es muy chica va a ser demasiado ajustado.</p>
+                </div>
+            </div>
         </section>
+        <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
+            <strong>Atencion!</strong> Ésta página aún no está terminada.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
     </main>
     <footer>
-        <section>
-            <h2 class="center">Siguenos en nuestras redes sociales!!</h2>
-            <img src="../images/icono-instagram.png" alt="instagram" class="insta-footer">
-            <h3 class="inline-class">@tupeluchito.oficial</h3>
+        <section class="footer">
+            <h2>Siguenos en nuestras redes sociales!!</h2>
+            <div class="footer__instagram">
+                <img src="../images/icono-instagram.png" alt="instagram" class="footer__instagram--logo">
+                <h3 class="footer__instagram--texto">@tupeluchito.oficial</h3>
+            </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
